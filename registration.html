@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="shortcut icon" href="assets/css-dep/img/logo.ico"> -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+<main class="main-bg">
+  <!-- Modal- Registration -->
+<div class="modal fade" id="registration" tabindex="-1" aria-labelledby="regLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content reg-modal">
+      <div class="modal-header">
+        <button type="button" class="btn-close mt-2" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="reg-body">
+          <ul class="list-unstyled">
+            <li class="reg-active"><a href="#">Create account</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+          <div class="reg-form_wrapper">
+            <form id="reg-form">
+              <div class="form-element">
+                <label for="reg-name" class="form-label">Full Name</label>
+                <input type="text" name="reg-name" class="form-control" id="reg-name" placeholder="Enter your full name"
+                  required>
+              </div>
+              <div class="form-element">
+                <label for="reg-email" class="form-label">Email address</label>
+                <input type="email" name="reg-email" class="form-control" id="reg-email"
+                  placeholder="Eg namaemail@emailkamu.com" required>
+              </div>
+              <div class="form-element">
+                <label for="reg-password" class="form-label">Password</label>
+                <input type="password" name="reg-password" class="form-control" id="reg-password"
+                  placeholder="**** **** ****" required>
+              </div>
+              <div class="form-element text-center mt-4">
+                <button class="gray-button">Registration</button>
+              </div>
+            </form>
+            <div class="button-box text-center">
+              <a href="#" class="gray-button">
+                <span class="d-inline-block me-2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.6875 9.99996C4.6875 9.00907 4.96051 8.08082 5.4348 7.28602V3.91461H2.0634C0.725313 5.65242 0 7.77035 0 9.99996C0 12.2296 0.725313 14.3475 2.0634 16.0853H5.4348V12.7139C4.96051 11.9191 4.6875 10.9909 4.6875 9.99996Z"
+                      fill="#FBBD00" />
+                    <path
+                      d="M10 15.3126L7.65625 17.6563L10 20.0001C12.2296 20.0001 14.3475 19.2747 16.0854 17.9367V14.5688H12.7175C11.9158 15.0449 10.9836 15.3126 10 15.3126Z"
+                      fill="#0F9D58" />
+                    <path
+                      d="M5.43464 12.7139L2.06323 16.0853C2.32815 16.4294 2.61663 16.7589 2.92878 17.0711C4.81753 18.9598 7.32874 20 9.99983 20V15.3125C8.0614 15.3125 6.36245 14.2687 5.43464 12.7139Z"
+                      fill="#31AA52" />
+                    <path
+                      d="M20 10C20 9.39164 19.9449 8.78211 19.8363 8.18844L19.7483 7.70801H10V12.3955H14.7442C14.2835 13.312 13.5752 14.0596 12.7175 14.5689L16.0853 17.9367C16.4294 17.6718 16.7589 17.3833 17.0711 17.0711C18.9598 15.1823 20 12.6711 20 10Z"
+                      fill="#3C79E6" />
+                    <path
+                      d="M13.7565 6.24348L14.1708 6.65777L17.4854 3.34324L17.0711 2.92895C15.1823 1.0402 12.6711 0 10 0L7.65625 2.34375L10 4.6875C11.419 4.6875 12.7531 5.24008 13.7565 6.24348Z"
+                      fill="#CF2D48" />
+                    <path
+                      d="M9.99993 4.6875V0C7.32884 0 4.81763 1.0402 2.92884 2.92891C2.61669 3.24105 2.32822 3.57055 2.06329 3.91465L5.4347 7.28605C6.36255 5.73125 8.0615 4.6875 9.99993 4.6875Z"
+                      fill="#EB4132" />
+                  </svg>
+                </span>Sign up with Google</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+
+<!-- Modal- LOGIN -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content reg-modal">
+      <div class="modal-header">
+        <button type="button" class="btn-close mt-2" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="reg-body">
+          <ul class="list-unstyled">
+            <li><a href="#">Create account</a></li>
+            <li class="reg-active"><a href="#">Login</a></li>
+          </ul>
+          <div class="reg-form_wrapper">
+            <form id="login-form">
+              <div class="form-element">
+                <label for="reg-email" class="form-label">Email address</label>
+                <input type="email" name="reg-email" class="form-control" id="reg-email"
+                  placeholder="Eg namaemail@emailkamu.com" required>
+              </div>
+              <div class="form-element">
+                <label for="reg-password" class="form-label">Password</label>
+                <input type="password" name="reg-password" class="form-control" id="reg-password"
+                  placeholder="**** **** ****" required>
+                <div class="text-end mt-1"><a href="#" class="text-success text-decoration-none">Forget Password?</a>
+                </div>
+              </div>
+              <div class="form-element text-center mt-4">
+                <button class="gray-button">Login</button>
+              </div>
+            </form>
+            <div class="button-box text-center">
+              <a href="#" class="gray-button">
+                <span class="d-inline-block me-2"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.6875 9.99996C4.6875 9.00907 4.96051 8.08082 5.4348 7.28602V3.91461H2.0634C0.725313 5.65242 0 7.77035 0 9.99996C0 12.2296 0.725313 14.3475 2.0634 16.0853H5.4348V12.7139C4.96051 11.9191 4.6875 10.9909 4.6875 9.99996Z"
+                      fill="#FBBD00" />
+                    <path
+                      d="M10 15.3126L7.65625 17.6563L10 20.0001C12.2296 20.0001 14.3475 19.2747 16.0854 17.9367V14.5688H12.7175C11.9158 15.0449 10.9836 15.3126 10 15.3126Z"
+                      fill="#0F9D58" />
+                    <path
+                      d="M5.43464 12.7139L2.06323 16.0853C2.32815 16.4294 2.61663 16.7589 2.92878 17.0711C4.81753 18.9598 7.32874 20 9.99983 20V15.3125C8.0614 15.3125 6.36245 14.2687 5.43464 12.7139Z"
+                      fill="#31AA52" />
+                    <path
+                      d="M20 10C20 9.39164 19.9449 8.78211 19.8363 8.18844L19.7483 7.70801H10V12.3955H14.7442C14.2835 13.312 13.5752 14.0596 12.7175 14.5689L16.0853 17.9367C16.4294 17.6718 16.7589 17.3833 17.0711 17.0711C18.9598 15.1823 20 12.6711 20 10Z"
+                      fill="#3C79E6" />
+                    <path
+                      d="M13.7565 6.24348L14.1708 6.65777L17.4854 3.34324L17.0711 2.92895C15.1823 1.0402 12.6711 0 10 0L7.65625 2.34375L10 4.6875C11.419 4.6875 12.7531 5.24008 13.7565 6.24348Z"
+                      fill="#CF2D48" />
+                    <path
+                      d="M9.99993 4.6875V0C7.32884 0 4.81763 1.0402 2.92884 2.92891C2.61669 3.24105 2.32822 3.57055 2.06329 3.91465L5.4347 7.28605C6.36255 5.73125 8.0615 4.6875 9.99993 4.6875Z"
+                      fill="#EB4132" />
+                  </svg>
+                </span>Login with Google</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----section start------------>
+<section class="first-page text-center">
+  <div class="hero-wrapper">
+    <div class="hero">
+      <img src="assets/img/first-page/Order Success.svg" alt="order success">
+    </div>
+    <h3 class="title ">Welcome</h3>
+    <p class="page-descr">Before enjoying Foodmedia services <br>
+      Please register first</p>
+  </div>
+  <div class="button-box">
+    <button type="button" data-bs-toggle="modal" data-bs-target="#registration" class="green-button">Create
+      account</button>
+    <button type="button" class="menthol-button" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Login
+    </button>
+  </div>
+  <div class="section-privacy mb-5">
+    By logging in or registering, you have agreed to <a href="#">the Terms and Conditions and Privacy Policy.</a>
+  </div>
+</section>
+</main>
+    <footer class="white-footer">
+      <ul class="list-unstyled">
+        <li class="footer-active"><a href="#">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_45_181)">
+            <path d="M28.5 13.0649L20.5005 6.8429C19.7985 6.29676 18.9344 6.00024 18.045 6.00024C17.1555 6.00024 16.2915 6.29676 15.5895 6.8429L7.58848 13.0649C7.10765 13.4388 6.71862 13.9177 6.45112 14.4649C6.18361 15.0122 6.0447 15.6133 6.04498 16.2224V27.0224C6.04498 27.818 6.36105 28.5811 6.92366 29.1437C7.48627 29.7063 8.24933 30.0224 9.04498 30.0224H27.045C27.8406 30.0224 28.6037 29.7063 29.1663 29.1437C29.7289 28.5811 30.045 27.818 30.045 27.0224V16.2224C30.045 14.9879 29.475 13.8224 28.5 13.0649Z" fill="#4B5563"/>
+            <path d="M24 22.5C20.685 24.4995 15.312 24.4995 12 22.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_45_181">
+            <rect width="36" height="36" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+        </a></li>
+        <li>
+          <a href="#">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_45_185)">
+              <path d="M13.5 18.0007H22.5" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.5 22.5007H22.5" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.875 5.62573H28.125C28.4234 5.62573 28.7095 5.74426 28.9205 5.95524C29.1315 6.16622 29.25 6.45236 29.25 6.75073V28.1257C29.25 29.0208 28.8944 29.8793 28.2615 30.5122C27.6286 31.1452 26.7701 31.5007 25.875 31.5007H10.125C9.22989 31.5007 8.37145 31.1452 7.73851 30.5122C7.10558 29.8793 6.75 29.0208 6.75 28.1257V6.75073C6.75 6.45236 6.86853 6.16622 7.07951 5.95524C7.29048 5.74426 7.57663 5.62573 7.875 5.62573Z" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11.25 3.37573V7.87573" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 3.37573V7.87573" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24.75 3.37573V7.87573" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_45_185">
+              <rect width="36" height="36" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.3334 7.33333C16.3334 8.74782 15.7715 10.1044 14.7713 11.1046C13.7711 12.1048 12.4145 12.6667 11 12.6667C9.58553 12.6667 8.22898 12.1048 7.22878 11.1046C6.22859 10.1044 5.66669 8.74782 5.66669 7.33333C5.66669 5.91885 6.22859 4.56229 7.22878 3.5621C8.22898 2.5619 9.58553 2 11 2C12.4145 2 13.7711 2.5619 14.7713 3.5621C15.7715 4.56229 16.3334 5.91885 16.3334 7.33333V7.33333ZM11 16.6667C8.52467 16.6667 6.1507 17.65 4.40036 19.4003C2.65002 21.1507 1.66669 23.5246 1.66669 26H20.3334C20.3334 23.5246 19.35 21.1507 17.5997 19.4003C15.8493 17.65 13.4754 16.6667 11 16.6667V16.6667Z" stroke="#4B5563" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <!-- <script src="assets/js/plugins.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+   <script src="assets/js/scripts.js"></script>
+ </body>
+</html>
